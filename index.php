@@ -17,7 +17,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/featured'); ?>			
 			<div id="content-container" class="container">
 				<?php if ( is_front_page() && is_home() ) {
-						echo('<h2>Whats New?</h2>');
+						echo('<h2 class="text-center">Whats New?</h2>');
 						echo('<div class="row">');
 					}
 				

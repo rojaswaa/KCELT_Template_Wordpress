@@ -7,7 +7,7 @@
  * @package Personal_Portfolio
  */
 add_image_size( 'featured', 1200, 500, array( 'center', 'center' ) ); 
-add_image_size( 'main-page-thumbnail', 620, 680, array( 'center', 'center' ) ); 
+add_image_size( 'main-page-thumbnail', 720, 480, array( 'center', 'center' ) ); 
 if ( ! function_exists( 'personal_portfolio_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.

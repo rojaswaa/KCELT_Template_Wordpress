@@ -18,8 +18,8 @@
 				</header><!-- .entry-header -->
 
 				<div class="entry-content text-center" data-mh="feature-title">
-					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-					
+					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><h3><?php the_title(); ?></h3></a></br>
+					 <?php the_author(); ?> 
 				</div><!-- .entry-content -->
 				<div class="clear"></div>
 				<div class="text-center entry-btn">

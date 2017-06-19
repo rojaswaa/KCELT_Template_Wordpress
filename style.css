@@ -24,6 +24,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	margin-bottom: 30px;
 }
 
+	.h2, h2 {
+		color: #005399;
+	}
+
 @media (max-width: 425px) {
 	.h2, h1 {
 		font-size: 28px;
@@ -34,17 +38,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	.p, p {
 		font-size: 10px;
 		}
+	#featured h3 {
+	font-size: 18px;	
 	}
+	
 
-.site-title {
+	.site-title {
 	text-align: center;
 	
-}
-.nav-padding {
+	}
+	.nav-padding {
 	padding-top: 46px;
+	}
+	
+	.btn-autosize {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+	}	
 }
 
-@media (min-width:1024px){
+@media (min-width:1024px) {
 	.nav-padding {
 	padding-top: 32px;
 	}
@@ -86,22 +101,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	background-position:center;
 }
 
-.equal-height {
-	
-	
-	background-repeat:no-repeat;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
-	background-position:center;
-}
 
 .site-branding {
 	padding-top: 350px;
 }
 
-.site-branding a {
+.site-branding a, .site-branding  h2 {
 		color:white;
 		text-shadow: 0 0 7px black;
 		
@@ -127,8 +132,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	margin-bottom: 25px;
 }
 
-.entry-content {
+.entry-content, .competency-header, .competency-title {
 	margin-bottom: 25px;
+}
+
+.entry-content {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.competency-title p {
+	margin: 10px 10px 0 10px;
 }
 .entry-btn {
 	padding-bottom: 25px;

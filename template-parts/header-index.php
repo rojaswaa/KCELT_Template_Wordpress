@@ -16,7 +16,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-8 col-sm-offset-4">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="site-title"><?php bloginfo( 'name' ); ?></h1></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="site-title"><?php bloginfo( 'name' ); ?></h1></a>
+							<h2 class="site-title"><?php bloginfo( 'description' ); ?></h2>
 						</div>
 					</div>
 				</div>

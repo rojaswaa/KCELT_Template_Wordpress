@@ -15,5 +15,9 @@ $(function() {
     property: 'height'});
 })		
 
-
+$(function() {
+	$('.competency-title').matchHeight({
+    byRow: true,
+    property: 'height'});
+})	
 

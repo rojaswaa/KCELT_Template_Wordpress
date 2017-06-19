@@ -9,8 +9,9 @@ $args = array(
 <?php 
 // the query
 $featured = new WP_Query( $args ); ?>
-<div class="container">
-	<h2>Featured</h2>
+<div id="featured">
+	<div class="container">
+	<h2 class="text-center">Featured</h2>
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	<!-- Wrapper for slides -->
  	<div id="post-<?php the_ID(); ?>" class="carousel-inner" role="listbox">
@@ -21,8 +22,8 @@ $featured = new WP_Query( $args ); ?>
     	<div class="item">
       		<?php the_post_thumbnail('featured', ['class' => 'img-responsive']);?>
 			<div class="carousel-caption">
-				<h2><?php the_title(); ?></h2>
-				<a class="btn btn-primary" href="<?php the_permalink(); ?>" role="button">Read More</a>
+				<h3><?php the_title(); ?></h3>
+				<a class="btn btn-primary btn-autosize" href="<?php the_permalink(); ?>" role="button">Read More</a>
 			</div>
     	</div>
     	<?php endwhile; ?>
@@ -40,8 +41,11 @@ $featured = new WP_Query( $args ); ?>
 		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	  </a>
+	</div>
 </div>
+	
 </div>
+
 
 <?php else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
