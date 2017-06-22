@@ -20,7 +20,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+
 	<a class="skip-link screen-reader-text sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'personal-portfolio' ); ?></a>
 	
 	<nav class="navbar navbar-default navbar-fixed-top navbar-toggleable-md" role="navigation">
@@ -37,14 +37,14 @@
 			  <img src="<?php echo get_template_directory_uri(); ?>/img/k_name_plate.jpg" class="d-inline-block align-top"/>
 				</a>
 		</div>
-
+		
 			<?php
 				wp_nav_menu( array(
 					'menu'              => 'primary',
 					'theme_location'    => 'primary',
 					'depth'             => 2,
 					'container'         => 'div',
-					'container_class'   => 'collapse navbar-collapse',
+					'container_class'   => 'collapse navbar-collapse navbar-right',
 					'container_id'      => 'bs-example-navbar-collapse-1',
 					'menu_class'        => 'nav navbar-nav',
 					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
@@ -71,5 +71,3 @@
 		get_template_part( 'template-parts/header-index', get_post_format() );
 	}
 	?>
-
-	<div id="content" class="site-content">

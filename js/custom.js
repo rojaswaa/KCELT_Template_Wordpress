@@ -6,7 +6,7 @@ $(function() {
 });
 
 jQuery( document ).ready(function() {
-    jQuery('.widget-area > section').addClass('col-xs-12 col-md-4');
+    jQuery('.widget-area > section').addClass('col-xs-12 col-md-6');
 });
 
 $(function() {

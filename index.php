@@ -14,43 +14,23 @@
 
 get_header(); ?>
 		<main id="main" class="site-main" role="main">
-			<?php get_template_part( 'template-parts/featured'); ?>			
-			<div id="content-container" class="container">
-				<?php if ( is_front_page() && is_home() ) {
-						echo('<h2 class="text-center">Whats New?</h2>');
-						echo('<div class="row">');
-					}
-				
-				else {}?>
-				
-				<?php if ( have_posts() ) :
-					/* Start the Loop */
-					while ( have_posts() ) : the_post();
-	
-					if ( is_front_page() && is_home() ) {
-							get_template_part( 'template-parts/content', get_post_format() );	
-					} 
-					elseif ( is_single()){
+			<?php
+				if ( is_front_page() && is_home() ) {
+					echo ('<div id="posts-wrapper">');
+						get_template_part( 'template-parts/content', '' );
+					echo ('</div>');
+				} 
+				elseif ( is_single()){
 							get_template_part( 'template-parts/content-post', get_post_format() );
-		
-
-							} else {
-
-							get_template_part( 'template-parts/content', 'none' );
-
-							}
-							
-
-						endwhile;
-						else :
-						get_template_part( 'template-parts/content', 'none' );
-
-					endif; ?>
-				</div>
+				} else {
+					
+				}
+					?>
+			<div id="competencies-wrapper">
+				<?php get_template_part( 'template-parts/competencies'); ?>
 			</div>
-			<?php get_template_part( 'template-parts/competencies'); ?>
-			
-
+			<div class="clear"></div>
+			<?php get_sidebar();?>
 		</main><!-- #main -->
 
 
