@@ -54,7 +54,7 @@
 			
 		</div>
 	</nav><!-- #site-navigation -->
-		<header id="masthead" class="site-header" role="banner" style="background-image: url('<?php echo z_taxonomy_image_url($cat->term_id); ?>')">
+		<header id="masthead" class="site-header-category" role="banner" style="background-image: url('<?php echo z_taxonomy_image_url($cat->term_id); ?>')">
 			<div class="site-branding">
 				<div class="container">
 					<div class="row">
