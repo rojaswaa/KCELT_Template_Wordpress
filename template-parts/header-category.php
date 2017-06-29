@@ -59,7 +59,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-8 col-sm-offset-4">
-							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><h2><?php the_title(); ?></h2></a>
+							<a href="<?php echo get_category_link($cat->term_id); ?>"><h2><?php single_cat_title(); ?></h2></a>
 						</div>
 					</div>
 				</div>

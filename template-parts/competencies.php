@@ -2,6 +2,7 @@
 
 $args_cat= array(
 		'hide_empty' => false, //Show Competencies even thought they may not have posts associate
+		'parent' => 0, // Only shows Parents Categories (Competencies)
 		'orderby' => 'ID', //Organize display of competencies by ID 
 		'exclude' => array(1, 257) //Excluding Folowwing Categories: Uncategorized and Featured
 	
