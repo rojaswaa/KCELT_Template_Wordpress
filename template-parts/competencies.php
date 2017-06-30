@@ -10,7 +10,10 @@ $args_cat= array(
 ); ?>
 
 <section id="competencies" class="container">
-	<h2 class="text-center">Faculty Competencies</h2>
+	<div class="page-header">
+		<h2>Faculty Competencies</h2>
+	</div><!--Section header-->
+	
 	<div class="row">
 		<?php foreach (get_categories($args_cat) as $cat) : ?>
 		<article class="col-xs-12 col-sm-6 col-md-4">

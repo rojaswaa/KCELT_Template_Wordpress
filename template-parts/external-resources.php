@@ -1,7 +1,9 @@
-<div class=" col-xs-6 col-md-2 text-center">
-		<span class="glyphicon glyphicon-link glyphicon-size-responsive" aria-hidden="true"></span>
+<div class="media-left hidden-xs">
+		<?php the_post_thumbnail(array('class' => 'img-responsive media media-object thumbnail'));?>
 </div>
-<div class=" col-xs-6 col-md-10" id="content">
-	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><h4><?php the_title(); ?></h4></a>
+<div class="media-body">
+	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+		<h4 class="media-heading"><?php the_title(); ?></h4>
+	</a>
 	<p><?php the_excerpt();?></p>
 </div>

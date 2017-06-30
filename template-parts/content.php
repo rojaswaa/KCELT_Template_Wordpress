@@ -10,12 +10,14 @@
 ?>
 
 <section id="posts" class="container">
-	<h3> What's New</h3>
-	<div class="row">
+	<div class="page-header header-new">
+		<h2> What's New</h2>
+	</div>
 	
+	<div class="row">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '' ); ?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class('col-xs-12 col-sm-4'); ?>>
+		<article id="post-<?php the_ID(); ?>" <?php post_class('col-xs-6 col-sm-4'); ?>>
 			<div class="card-wrapper z-depth-1">
 				<header class="entry-header">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -33,5 +35,5 @@
 		</article><!-- #post-## -->	
 		<?php endwhile; ?>
 		<?php endif; ?>
-	</div>
-</section>
+	</div><!-- #post-row -->
+</section><!-- #post-container## -->	

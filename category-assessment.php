@@ -35,13 +35,24 @@ get_header(); ?>
 			'order' => ASC,
 				)
 			);?>
+	
+	<section class="container" id="competency-description">
+		<div class="page-header">
+			<h2>Description</h2>
+		</div>
+		<div class="jumbotron alert-info">
+			<p><?php echo category_description($cat->term_id); ?></p>
+		</div>
+		
+	</section>
 	<!--Loop#1 -  for Teaching Guides-->
 	<section class="container" id="teaching-guides-posts">
-		<p><?php echo category_description($cat->term_id); ?></p>
+		<div class="page-header">
+			<h2>Content</h2>
+		</div>
 		<h3>Teaching Guides</h3>
-		
 		<?php if ($teaching->have_posts()) : while($teaching->have_posts()) : $teaching->the_post();?>
-		<article class="row" id="teaching-guide-posts">	
+		<article class="media well" id="teaching-guide-posts">	
 			<?php get_template_part( 'template-parts/teaching-guides', get_post_format() );?>	
 		</article>
 		<?php endwhile; else:?>
@@ -50,12 +61,12 @@ get_header(); ?>
 		<?php wp_reset_postdata(); ?>
 	</section>	
 	
-	<!--Loop#2 -  for Teaching Guides-->
+	<!--Loop#2 -  for External Resources-->
 	<section class="container" id="external">
 		<h3>External Resources</h3>
 		
 		<?php if ($external->have_posts()) : while($external->have_posts()) : $external->the_post();?>
-		<article class="row" id="teaching-guide-posts">	
+		<article class="media well" id="teaching-guide-posts">	
 			<?php get_template_part( 'template-parts/external-resources', get_post_format() );?>	
 		</article>
 		<?php endwhile; else:?>
@@ -67,9 +78,8 @@ get_header(); ?>
 	<!--Loop#2 -  For Stories-->
 	<section class="container" id="stories">
 		<h3>Stories</h3>
-		
 		<?php if ($stories->have_posts()) : while($stories->have_posts()) : $stories->the_post();?>
-		<article class="row" id="stories-posts">	
+		<article class="media well" id="stories-posts">	
 			<?php get_template_part( 'template-parts/stories', get_post_format() );?>	
 		</article>
 		<?php endwhile; else:?>

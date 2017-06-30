@@ -28,6 +28,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 		color: #005399;
 }
 
+.h3, h3 {
+	color: #337ab7;
+}
+
 .navbar-default {
 	background-color: white;
 	border-bottom: 2px solid #337ab7;
@@ -43,10 +47,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
 	background-color: #C0E3FC;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	
 }
 
 .navbar-brand>img {
@@ -75,10 +75,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 }
 
 .site-branding {
-	padding-top: 350px;
+	padding-top:600px;
 }
 
-.site-branding a, .site-branding  h2 {
+.site-branding a, .site-branding  h2, .site-branding p {
 		color:white;
 		text-shadow: 0 0 7px black;
 	}
@@ -96,7 +96,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 .entry-content, .competency-header, .competency-title {
 	margin-bottom: 25px;
 }
-
+.page-header {
+	border-bottom-color: #0065a4;
+}
 .entry-content {
 	padding-left: 10px;
 	padding-right: 10px;
@@ -104,6 +106,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 
 .competency-title p {
 	margin: 10px 10px 0 10px;
+}
+.competency-title h3 {
+	margin-left:10px;
+	margin-right:10px;
 }
 
 .entry-btn {
@@ -118,41 +124,53 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
   }
 
 #competencies-wrapper {
-	background-color: #ebebeb;
+	background-color: #f5f5f5;
 }
 
 .glyphicon-size-responsive {
 	font-size: 50px;
 }
 
+.media-left , .media>.pull-left {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 body iframe {
 	width: 100%;
 }
 
-@media (max-width:425px){
-	.site-branding {
-	padding-top: 100px;
+#competency-description {
+	margin-top: 30px;
+}
+.top {
+	box-shadow: 0 -5px 5px -5px #333;
+}
+			
+.right {
+box-shadow: -5px 0 5px -5px #333;
+}
+			
+.bottom {
+	box-shadow: 0 5px 5px -5px #333;
+}
+			
+.left {
+	box-shadow: 5px 0 5px -5px #333;
+}
+			
+.all {
+box-shadow: 0 0 5px #333;
+}
+
+@media (min-width:1024px) {
+	.nav-padding {
+	padding-top: 32px;
 	}
 }
 
 @media (max-width: 768px) {
-	.h2, h1 {
-		font-size: 28px;
-	}
-	.h2, h2 {
-		font-size: 20px;
-	}
-	.p, p {
-		font-size: 10px;
-		}
-	#featured h3 {
-	font-size: 18px;	
-	}
-	
-	.site-title {
-	text-align: center;
-	
-	}
+
 	.nav-padding {
 	padding-top: 46px;
 	}
@@ -169,10 +187,37 @@ body iframe {
 	.site-header-category {
 		margin-top: 48px;
 	}
+	
+	.site-branding {
+	padding-top: 350px;
+	}
 }
 
-@media (min-width:1024px) {
-	.nav-padding {
-	padding-top: 32px;
+@media (max-width:425px){
+	.h1, h1 {
+		font-size: 28px;
+	}
+	
+	.h2, h2 {
+		font-size: 20px;
+	}
+	
+	.h3, h3 {
+		font-size: 16px;
+	}
+	.p, p {
+		font-size: 12px;
+	}
+	
+	.site-header {
+		height: 300px;
+	}
+	
+	.site-branding {
+	padding-top: 200px;
+	}
+	
+	.site-branding p, .site-branding h2 {
+	margin-top:10px;
 	}
 }
