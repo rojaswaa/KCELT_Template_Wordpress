@@ -1,10 +1,10 @@
 /*
-Theme Name: Wilson's Portfolio
-Theme URI: http://underscores.me/
-Author: Wilson Rojas
+Theme Name: KCELT Blog Template
+Theme URI: http://kcelt.org
+Author: Wilson Rojas - Instructional Designer - Kirkwood's Center for Excellence in Learning and Teaching
 Author URI: http://www.wilsonmrojas.com
-Description: Description
-Version: 1.0.0
+Description: This template is designed to showcase content as it relates to Kirkwood Faculty Competencies. 
+Version: 3.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: personal-portfolio
@@ -13,7 +13,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Personal Portfolio is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+KCELT Blog template is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -31,6 +31,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 .h3, h3 {
 	color: #337ab7;
 }
+
+
+
 
 .navbar-default {
 	background-color: white;
@@ -52,6 +55,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 .navbar-brand>img {
 	height: 30px;
 }
+
+
 
 .site-header, .site-header-category {
 	-webkit-background-size:cover;
@@ -138,6 +143,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 
 body iframe {
 	width: 100%;
+	margin-top: 48px;
 }
 
 #competency-description {
@@ -161,6 +167,17 @@ box-shadow: -5px 0 5px -5px #333;
 			
 .all {
 box-shadow: 0 0 5px #333;
+}
+
+.padding-form-left a {
+	padding-left: 150px;
+	}
+.push-top {
+	margin-top:60px;
+}
+
+#footer-content-wrapper {
+	margin-top :30px;
 }
 
 @media (min-width:1024px) {
@@ -191,6 +208,8 @@ box-shadow: 0 0 5px #333;
 	.site-branding {
 	padding-top: 350px;
 	}
+	
+	
 }
 
 @media (max-width:425px){
@@ -219,5 +238,13 @@ box-shadow: 0 0 5px #333;
 	
 	.site-branding p, .site-branding h2 {
 	margin-top:10px;
+	}
+	
+	.padding-form-left {
+	padding-top: 10px;
+	}
+	
+	.padding-form-left a {
+	padding-left: 0px;
 	}
 }

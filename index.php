@@ -14,25 +14,14 @@
 
 get_header(); ?>
 		<main id="main" class="site-main" role="main">
-			<?php
-				if ( is_front_page() && is_home() ) {
-					echo ('<div id="posts-wrapper">');
-						get_template_part( 'template-parts/content', '' );
-					echo ('</div>');
-				} 
-				elseif ( is_single()){
-							get_template_part( 'template-parts/content-post', get_post_format() );
-				} else {
-					
-				}
-					?>
+			<div id="loop-wrapper">
+				<?php get_template_part( 'template-parts/index-loop', '' ); ?>
+			</div><!-- #loop -->
 			<div id="competencies-wrapper">
 				<?php get_template_part( 'template-parts/competencies'); ?>
-			</div>
-			<div class="clear"></div>
+			</div><!-- #compentecies -->
+			<div class="clearfix"></div><!-- #clearfix -->
 			<?php get_sidebar();?>
 		</main><!-- #main -->
-
-
 <?php
 get_footer();

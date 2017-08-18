@@ -17,21 +17,21 @@ get_header(); ?>
 	<?php 
 	$teaching = new WP_Query ( //Requesting Teaching Guides of given category
 		array (
-			'cat' => 258,
+			'cat' => 288,
 			'order' => ASC,
 				)
 			);
 			
 	$external = new WP_Query ( //Requesting External Resources of given category
 		array (
-			'cat' => 259,
+			'cat' => 289,
 			'order' => ASC,
 				)
 			);
 			
 	$stories = new WP_Query ( //Requesting Stories of given category
 		array (
-			'cat' => 260,
+			'cat' => 291,
 			'order' => ASC,
 				)
 			);?>
@@ -45,8 +45,8 @@ get_header(); ?>
 		</div>
 		
 	</section>
-	<!--Loop#1 -  for Teaching Guides-->
-	<section class="container" id="teaching-guides-posts">
+	
+	<section class="container" id="teaching-guides-posts"><!--Loop#1 -  for Teaching Guides-->
 		<div class="page-header">
 			<h2>Content</h2>
 		</div>
@@ -56,10 +56,12 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/teaching-guides', get_post_format() );?>	
 		</article>
 		<?php endwhile; else:?>
-				<p> working for you</p>
+		<article class="media well">	
+			<p>It seems we don't have teaching guides to share with you yet. <a href="https://goo.gl/forms/OIkCHJDljBYzEe1Z2" target="_blank">Help us grow our repository!</a></p>	
+		</article>
 		<?php endif;?>
 		<?php wp_reset_postdata(); ?>
-	</section>	
+	</section><!--Loop#1 -  for Teaching Guides ends-->	
 	
 	<!--Loop#2 -  for External Resources-->
 	<section class="container" id="external">
@@ -70,7 +72,9 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/external-resources', get_post_format() );?>	
 		</article>
 		<?php endwhile; else:?>
-				<p> working for you</p>
+			<article class="media well">	
+				<p>It seems we don't have External Resources to share with you yet. <a href="https://goo.gl/forms/OIkCHJDljBYzEe1Z2" target="_blank">Help us grow our repository!</a></p>	
+			</article>
 		<?php endif;?>
 		<?php wp_reset_postdata(); ?>
 	</section>
@@ -83,7 +87,9 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/stories', get_post_format() );?>	
 		</article>
 		<?php endwhile; else:?>
-				<p> working for you</p>
+			<article class="media well">	
+				<p>It seems we don't have Stories to share with you yet. <a href="https://goo.gl/forms/OIkCHJDljBYzEe1Z2" target="_blank">Help us grow our repository!</a></p>	
+			</article>
 		<?php endif;?>
 		<?php wp_reset_postdata(); ?>
 	</section>
